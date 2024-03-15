@@ -15,7 +15,7 @@ const FileUpload = () => {
   const [showEmailForm, setShowEmailForm] = useState(false);
   const [emailTo, setEmailTo] = useState('');
   const [emailFrom, setEmailFrom] = useState('');
-  axios.defaults.baseURL = 'https://file-sharing-app-bmf0.onrender.com';
+  axios.defaults.baseURL = 'http://localhost:5555';
 
   // console.log(fileURL)
   const fileTypes = ["JPG", "PNG", "GIF", "JPEG", "MP4"];
@@ -23,6 +23,7 @@ const FileUpload = () => {
     if (e.target.files) {
       setFile(e.target.files[0]);
 
+      
     }
   };
 
