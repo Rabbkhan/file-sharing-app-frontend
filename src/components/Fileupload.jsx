@@ -15,7 +15,7 @@ const FileUpload = () => {
   const [showEmailForm, setShowEmailForm] = useState(false);
   const [emailTo, setEmailTo] = useState('');
   const [emailFrom, setEmailFrom] = useState('');
-  axios.defaults.baseURL = 'https://file-sharing-app-373h.onrender.com';
+  axios.defaults.baseURL = 'https://file-sharing-app-k60q.onrender.com';
 
   // console.log(fileURL)
   const fileTypes = ["JPG", "PNG", "GIF", "JPEG", "MP4"];
