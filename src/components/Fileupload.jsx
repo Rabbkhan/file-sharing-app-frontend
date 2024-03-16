@@ -135,7 +135,8 @@ if(file){
           <input type="file" id="fileInput" className="hidden" onChange={handleFileChange} multiple />
         </label>
         <br />
-        <button className='bg-blue-600 text-white py-2 px-5 rounded-xl  mt-3' onClick={handleUploadClick}>Upload</button>
+        <button className='bg-blue-600 text-white py-2 px-5 rounded-xl mt-3 hover:bg-blue-900 hover:text-white hover:shadow-md ' onClick={handleUploadClick}>Upload</button>
+
         <ToastContainer />
       </div>
    
