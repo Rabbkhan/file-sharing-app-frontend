@@ -15,7 +15,7 @@ const FileUpload = () => {
   const [showEmailForm, setShowEmailForm] = useState(false);
   const [emailTo, setEmailTo] = useState('');
   const [emailFrom, setEmailFrom] = useState('');
-  axios.defaults.baseURL = 'https://file-sharing-app-k60q.onrender.com';
+  // axios.defaults.baseURL = 'https://file-sharing-app-k60q.onrender.com';
 
   // console.log(fileURL)
   const fileTypes = ["JPG", "PNG", "GIF", "JPEG", "MP4"];
@@ -42,7 +42,7 @@ if(file){
     const formData = new FormData();
     formData.append('myfile', file);
 
-    axios.post('/api/files', formData, {
+    axios.post('https://file-sharing-app-k60q.onrender.com/api/files', formData, {
       headers: {
         'Content-Type': 'multipart/form-data'
       },
@@ -92,7 +92,7 @@ if(file){
       emailFrom: emailFrom,
     };
     try {
-      const response = await axios.post('/api/files/send/', formData, {
+      const response = await axios.post('https://file-sharing-app-k60q.onrender.com/api/files/send/', formData, {
         headers: {
           "Content-Type": "application/json",
         },
